@@ -1,5 +1,10 @@
-language: ruby
-rvm:
-  - 2.2
-  - jruby
-  - 2.0.0-p247
+lang: ruby
+script: bundle exec rake
+rvm: 2.1
+deploy:
+  provider: heroku
+  api_key:
+    secure: COEw2XCokGB0fsgkOdfxTKR44z/PbTA8DE5B45Sy/hdXQXcg1b8pV1M/jx8iYmXRK7Mk1Wz3V0+uE7THb07G/mandF6P8hDWjuZ5IgrGAo8yTnnTezpemps1tn47h8SpgAC1/49lhBEehu7xIj9u4NxB4Md0E3JKceAlgTv+a7fambnWsEqSfTPgDHQhfBMYpluLpKBMbMDxsemyX5FdDN3i3zs3BDTNuCBF/uqWh5+DguAAU2a6gaDzqx2V9K5TyD9xrCgySHz3EoPU1y1dBDts+IDRK+KBKbxmkTcnQ34JzB46X798y5cSbH42z5f8h1mNqA8kU2CtNx2eHHQ6NrbUpReCbU0ZJedu1zzlNzUs+jER9VmJp/riHrUfNQdGMCvWoumBm8eE7Py90S65zOd7tG9gyIbI/As/Ff12vxvlVDtBK0GQYo+psBMv3rmwJG0PdHwJ/IXoFDCc2enVqs72KEbx7QujlxrSZS1Ry90tLb3p48MH1TjjiejbENAJ0pa2YLTkfkCPlnP63K17YI3GzOBEeE3fL9rsAmTR3Mw/c/KI0SbKzQ++9jAcdC7j7VHFurJxFz+RvhkKUdxJVVzpHsiDdzAHQd9+NQP1XJan9XzftBVEzXg4qTCHdbJSgir2JcjWcGCE7dICIBi+O7lnUW0cvqqSCuf/EBqXztw=
+  app: Triangle_Type
+  on:
+    repo: LeoSnets/Triangle_Type
