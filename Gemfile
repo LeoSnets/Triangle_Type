@@ -1,2 +1,5 @@
 source 'https://rubygems.org'
-gemspec
+#gemspec
+
+gem 'codecov', :require => false, :group => :test
+gem 'puma'
